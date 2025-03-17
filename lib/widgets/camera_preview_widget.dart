@@ -18,7 +18,7 @@ class CameraPreviewWidget extends StatelessWidget {
       child: Transform(
         alignment: Alignment.center,
         transform: isFrontCamera
-            ? Matrix4.rotationY(3.1416) // Flip horizontally for front camera
+            ? Matrix4.rotationY(3.1416) 
             : Matrix4.identity(),
         child: CameraPreview(controller),
       ),
